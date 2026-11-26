@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0e14">
+  <link rel="icon" type="image/png" sizes="512x512" href="./discord-icon.png">
+  <meta name="description" content="Aragonite : choisis ta classe, progresse à Valoria, explore Dwarf City et pars en donjon. Statut et joueurs en direct.">
+  <title>Aragonite — Serveur Minecraft</title>
+  <link rel="preconnect" href="https://api.mcsrvstat.us">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#accueil" aria-label="Aragonite, accueil">
+        <img class="brand-logo" src="./discord-icon.png" alt="" width="34" height="34"><span>ARAGONITE</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#accueil" data-route="accueil" class="active">Accueil</a>
+        <a href="#wiki" data-route="wiki">Wiki</a>
+        <a href="#vote" data-route="vote">Vote</a>
+      </nav>
+      <a class="discord-top" href="https://discord.gg/5r7CCcNTKs" target="_blank" rel="noreferrer">Discord <span aria-hidden="true"></span></a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+      <section id="page-accueil" class="page active" aria-labelledby="hero-title">
+        <div class="hero">
+          <div class="hero-grid"></div>
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> MINECRAFT · RPG</div>
+            <h1 id="hero-title">Écris ta légende.<br><em>Explore Aragonite.</em></h1>
+            <p class="hero-text">Choisis ta classe, gagne de l’expérience et de l’or, puis pars explorer Valoria et les donjons de Dwarf City.</p>
+            <div class="hero-actions">
+              <button class="button button-primary copy-ip" data-copy="play.aragonite.fr"><span class="button-icon">＋</span> Jouer maintenant</button>
+              <a class="button button-quiet" href="https://discord.gg/5r7CCcNTKs" target="_blank" rel="noreferrer">Rejoindre le Discord <span></span></a>
+            </div>
+            <div class="hero-version"><span class="live-dot"></span> ARAGONITE <span class="separator">/</span> IP <strong>play.aragonite.fr</strong></div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-one"></div><div class="orb orb-two"></div>
+            <div class="crystal crystal-back"></div><div class="crystal crystal-front"></div>
+            <div class="hero-rune">ᚨ</div>
+            <div class="art-caption"><span>ARAGONITE</span><small>RPG · FR</small></div>
+          </div>
+          <div class="hero-index">01 <span>/</span> 03</div>
+        </div>
+
+        <section class="stats-wrap" aria-label="Statut du serveur">
+          <div class="stats-head"><div><span class="section-kicker">LE ROYAUME EN DIRECT</span><h2>Le serveur, maintenant</h2></div><div class="refresh-note"><span class="live-dot"></span> Actualisé automatiquement</div></div>
+          <div class="stats-grid">
+            <article class="stat-card stat-status"><div class="stat-label">ÉTAT DU SERVEUR</div><div class="stat-value" id="server-state">Connexion…</div><div class="stat-sub" id="server-sub">Vérification du ping Minecraft</div><span class="stat-glyph">◈</span></article>
+            <article class="stat-card"><div class="stat-label">JOUEURS EN LIGNE</div><div class="stat-value"><span id="players-online">—</span><span class="stat-total"> / <span id="players-max">—</span></span></div><div class="stat-sub">Connectés en ce moment</div><span class="stat-glyph">♟</span></article>
+            <article class="stat-card"><div class="stat-label">JOUEURS UNIQUES EN LIGNE</div><div class="stat-value" id="players-unique">—</div><div class="stat-sub">Joueurs connectés actuellement</div><span class="stat-glyph">✦</span></article>
+            <article class="stat-card"><div class="stat-label">VERSION</div><div class="stat-value version-value" id="server-version">1.21.11</div><div class="stat-sub">Minecraft Java</div><span class="stat-glyph">⌘</span></article>
+          </div>
+          <p class="stats-foot" id="stats-updated">Les compteurs se mettent à jour toutes les 60 secondes.</p>
+        </section>
+
+        <section class="join-strip">
+          <div><span class="section-kicker">TON AVENTURE COMMENCE ICI</span><h2>Prêt à partir à l’aventure ?</h2><p>Copie l’adresse du serveur et commence ta progression RPG.</p></div>
+          <button class="server-address copy-ip" data-copy="play.aragonite.fr"><span class="address-label">ADRESSE DU SERVEUR</span><strong>play.aragonite.fr</strong><span class="copy-hint">Cliquer pour copier</span></button>
+        </section>
+        <section class="feature-row">
+          <article><span class="feature-icon">⚔</span><div><h3>Choisis ta classe</h3><p>Guerrier, mage, archer, assassin ou paladin : trouve ton style de combat.</p></div></article>
+          <article><span class="feature-icon">◇</span><div><h3>Progresse à ton rythme</h3><p>Gagne de l’XP et de l’or, complète des quêtes et améliore ton personnage.</p></div></article>
+          <article><span class="feature-icon">✧</span><div><h3>Explore et affronte les boss</h3><p>Découvre les sites cachés de Dwarf City et pars en donjon, seul ou en groupe.</p></div></article>
+        </section>
+      </section>
+
+      <section id="page-wiki" class="page content-page" aria-labelledby="wiki-title">
+        <div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> CODEX D’ARAGONITE</div><h1 id="wiki-title">Wiki <em>du royaume</em></h1><p>Classes, progression et exploration : tes premières clés pour l’aventure RPG.</p></div>
+        <div class="wiki-layout">
+          <aside class="wiki-nav"><span class="section-kicker">DANS LE CODEX</span><a class="wiki-link selected" href="#demarrer">Bien démarrer</a><a class="wiki-link" href="#classes">Classes & progression</a><a class="wiki-link" href="#quetes">Quêtes à Valoria</a><a class="wiki-link" href="#exploration">Exploration & donjons</a></aside>
+          <div class="wiki-content">
+            <article class="wiki-article" id="demarrer"><span class="article-index">01 — PREMIERS PAS</span><h2>Du lobby à Dwarf City</h2><p>Rejoins Aragonite avec <strong>play.aragonite.fr</strong>, puis prends la boussole du lobby et sélectionne <strong>RPG – Karak Dûrn</strong>. Ton profil accompagne ton aventure : il conserve ta classe, ton niveau, ton XP, ton or et tes quêtes.</p><div class="callout"><span>✦</span><p><strong>Ton guide en jeu</strong><br>Ouvre le menu RPG ou utilise <code>/rpgcore:rpg tutoriel</code> pour découvrir les commandes et les étapes de départ.</p></div></article>
+            <article class="wiki-article" id="classes"><span class="article-index">02 — TON PERSONNAGE</span><h2>Classes & progression</h2><p>Choisis une classe qui correspond à ta façon de jouer. Chaque profil possède ses caractéristiques et ses compétences.</p><div class="tip-grid"><div><span>01</span><strong>Guerrier</strong><small>Combat au corps à corps.</small></div><div><span>02</span><strong>Mage</strong><small>Attaques à distance et contrôle.</small></div><div><span>03</span><strong>Archer</strong><small>Précision et portée.</small></div><div><span>04</span><strong>Assassin</strong><small>Mobilité et attaques rapides.</small></div><div><span>05</span><strong>Paladin</strong><small>Résistance et soin.</small></div></div><p class="muted">Commandes : <code>/rpgcore:rpg classe</code>, <code>/rpgcore:rpg stats</code> et <code>/rpgcore:rpg hud on</code>.</p></article>
+            <article class="wiki-article" id="quetes"><span class="article-index">03 — QUÊTES ET RÉCOMPENSES</span><h2>Le chemin de Valoria</h2><p>À Valoria, rencontre <strong>Maëlle</strong> et aide-la à sécuriser le chemin du nord. Les quêtes font progresser ton personnage et peuvent te rapporter de l’XP et de l’or. Consulte ton objectif avec <code>/rpgcore:rpg quest</code>.</p><div class="callout"><span>✦</span><p><strong>Équipe-toi</strong><br>La boutique RPG permet d’acheter et d’équiper des armes selon ton niveau. Vérifie les prérequis et ton solde avec les commandes du menu RPG.</p></div></article>
+            <article class="wiki-article" id="exploration"><span class="article-index">04 — SITES CACHÉS ET DONJONS</span><h2>Explore Dwarf City</h2><p>Ouvre l’œil dans les biomes : des lieux dissimulés peuvent révéler des reliques ou l’entrée d’un donjon. Pars en expédition seul ou forme un groupe jusqu’à cinq joueurs pour affronter des vagues et leurs boss.</p><div class="tip-grid"><div><span>✧</span><strong>Forêt sombre</strong><small>Sanctuaire des ronces et relique du guetteur.</small></div><div><span>✧</span><strong>Marais</strong><small>La crypte et ses créatures toxiques.</small></div><div><span>✧</span><strong>Pics escarpés</strong><small>L’observatoire et le Gardien de pierre.</small></div></div><p class="muted">Pour les annonces, la compatibilité et l’aide, retrouve la communauté sur Discord.</p><a class="text-link" href="https://discord.gg/5r7CCcNTKs" target="_blank" rel="noreferrer">Consulter les annonces sur Discord</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="page-vote" class="page content-page vote-page" aria-labelledby="vote-title">
+        <div class="page-heading"><div class="eyebrow"><span class="eyebrow-line"></span> FAIS GRANDIR LE ROYAUME</div><h1 id="vote-title">Un vote. <em>Un vrai soutien.</em></h1><p>Chaque vote aide de nouveaux joueurs à découvrir Aragonite.</p></div>
+        <div class="vote-layout">
+          <div class="vote-card">
+            <img class="vote-emblem" src="./discord-icon.png" alt="" width="76" height="76"><div class="vote-content"><span class="section-kicker">SOUTENIR ARAGONITE</span><h2>Vote et tente ta chance</h2><p>Entre ton pseudo Minecraft, vote sur la fiche Aragonite, puis vérifie ton vote ici pour débloquer la roue. Un vote validé donne droit à un lancer.</p>
+              <label class="vote-label" for="vote-username">Pseudo Minecraft</label>
+              <div class="vote-start-row"><input id="vote-username" name="username" autocomplete="nickname" maxlength="16" placeholder="Ton pseudo en jeu" aria-describedby="vote-message"><button class="button button-primary" id="vote-start" type="button">Préparer mon vote</button></div>
+              <p class="vote-message" id="vote-message" role="status" aria-live="polite"></p>
+              <a class="button button-quiet" id="vote-external" href="https://serveur-prive.net/minecraft/aragonite/vote" target="_blank" rel="noreferrer">Ouvrir la page de vote</a>
+              <button class="button button-primary hidden" id="vote-verify" type="button">J’ai voté — vérifier</button>
+              <div class="wheel-panel hidden" id="wheel-panel">
+                <div class="wheel-wrap"><div class="wheel-pointer"></div><div class="reward-wheel" id="reward-wheel"><span class="wheel-center">A</span></div></div>
+                <div class="wheel-copy"><span class="section-kicker">VOTE VALIDÉ</span><h3>La roue t’attend</h3><p id="wheel-player"></p><button class="button button-primary" id="wheel-spin" type="button">Lancer la roue</button><p class="wheel-result" id="wheel-result" role="status" aria-live="polite"></p><div class="vote-meta">Après le lancer, récupère ton lot en jeu avec <code>/vote</code>.</div></div>
+              </div>
+              <div class="vote-meta">Le vote est vérifié par la plateforme partenaire. Les chances et le lot sont décidés côté serveur.</div>
+            </div>
+          </div>
+          <aside class="leaderboard-card"><span class="section-kicker">CLASSEMENT MENSUEL</span><h2>Top voteurs</h2><p>Les joueurs qui soutiennent le plus Aragonite ce mois-ci.</p><ol id="vote-leaderboard" class="leaderboard-list"><li class="leaderboard-empty">Chargement du classement…</li></ol><small>Classement synchronisé avec Serveur-Privé.</small></aside>
+        </div>
+        <div class="reward-odds"><span class="section-kicker">LA ROUE ARAGONITE</span><div><span><i class="odds-chip chip-xp"></i>100 XP <b>40 %</b></span><span><i class="odds-chip chip-xp2"></i>250 XP <b>25 %</b></span><span><i class="odds-chip chip-gold"></i>50 pièces d’or <b>20 %</b></span><span><i class="odds-chip chip-gold2"></i>100 pièces d’or <b>10 %</b></span><span><i class="odds-chip chip-mix"></i>100 XP + 100 pièces d’or <b>5 %</b></span></div></div>
+        <div class="vote-steps"><div><span>01</span><h3>Saisis ton pseudo</h3><p>Utilise le pseudo Minecraft qui recevra le lot RPG.</p></div><div><span>02</span><h3>Vote sur la fiche</h3><p>Valide le captcha sur la page Serveur-Privé d’Aragonite.</p></div><div><span>03</span><h3>Lance la roue</h3><p>Après vérification, récupère ta récompense en jeu avec <code>/vote</code>.</p></div></div>
+      </section>
+    </main>
+
+    <footer class="footer"><a class="brand" href="#accueil"><img class="brand-logo" src="./discord-icon.png" alt="" width="34" height="34"><span>ARAGONITE</span></a><span>Serveur Minecraft</span><div><a href="#wiki">Wiki</a><a href="#vote">Vote</a><a href="https://discord.gg/5r7CCcNTKs" target="_blank" rel="noreferrer">Discord</a></div></footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+name: AragoniteVote
+version: '1.0.0'
+main: fr.aragonite.rpg.vote.AragoniteVotePlugin
+api-version: '26.2'
+depend: [RPGCore]
+commands:
+  vote:
+    description: Récupère ta récompense de vote Aragonite.
+    usage: /vote
+permissions:
+  aragonite.vote.claim:
+    description: Récupérer une récompense de vote.
+    default: true
